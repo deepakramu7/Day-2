@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Roboto:wght@100;400;500;700&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 500vh;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: 'Roboto',sans-serif;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 0px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    padding-right: 30px;
+    z-index: 2;
+}
+nav ul li{
+    line-height: 1.5;
+    margin-left: 20px;
+    list-style: none;
+    align-items: end;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+nav ul li a:hover{
+    color: red;
+}
+.my-self{
+    padding-left: 30px;
+    width: 50%;
+    height: 100vh;
+    padding-top: 50px;
+}
+.my-self h1{
+    font-size: 36px;
+}
+.my-self p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.myself{
+    width: auto;
+    height: 500px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+#section1{
+    width: auto;
+    padding-top: 100px;
+    height: 100vh;
+    background-color: rgba(135, 207, 235, 0.462);
+}
+#section2{
+    width: auto;
+    height: 100vh;
+    padding-top: 100px;
+}
+#section3{
+    width: auto;
+    height: 100vh;
+    background-color: rgba(135, 207, 235, 0.462);
+    padding-top: 100px;
+}
+#section4{
+    width: auto;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.restaurant{
+    width: 30%;
+    height: 65vh;
+    border: 1px solid rgba(128, 128, 128, 0.51);
+    border-radius: 16px;
+    margin:auto;
+    padding-left: 10px;
+    position: relative;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.6);
+    background-color: white;
+}
+.restaurant:hover{
+    box-shadow: 2px 2px 25px rgba(165, 6, 6, 0.832);
+}
+.restaurant-dishes{
+    width: 98%;
+    height: 40vh;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 16px;
+}
+.type{
+    background-color: rgba(87, 87, 87, 0.723);
+    color: blanchedalmond;
+    font-size: 12px;
+    font-weight: bold;
+    width: 60px;
+    padding:4px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.offer{
+    background-color: skyblue;
+    width: 145px;
+    padding: 3px 5px;
+    position: absolute;
+    bottom: 160px;
+}
+.time{
+    background-color: white;
+    width: 55px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 160px;
+}
+.restaurant-name{
+    font-size: 24px;
+    margin-top: 0px;
+}
+.restaurant-type{
+    font-size: 18px;
+    color: grey;
+}
+.line{
+    width: 99%;
+    background-color: rgba(128, 128, 128, 0.501);
+    height: 0.5px;
+}
+.about{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.safety{  
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+}
+/* Explore to Bali */
+
+.explore{
+    width: 60%;
+    height: 50vh;
+    margin:auto;
+    margin-bottom: 50vh;
+    border-radius: 24px;
+    background: linear-gradient(rgba(0,0,0,0.1)100%,rgba(0,0,0,0.1)50%),url(bali.jpg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.3);
+}
+.explore:hover{
+    box-shadow: 2px 2px 20px rgb(2, 107, 20);
+}
+.explore h1{
+    font-size: 40px;
+}
+.explore p{
+    font-size: 20px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Zomato */
+
+.zomato{
+    width: 60%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.1)100%,rgba(0,0,0,0.1)50%),url(zomato.jpg);
+    margin: auto;
+    border-end-end-radius: 30px;
+    border-start-start-radius: 30px;
+    margin-bottom: 50vh;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.499);
+}
+.zomato:hover{
+    box-shadow: 2px 2px 25px rgba(165, 6, 6, 0.832);
+}
+.zomato-dp{
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.778);
+    padding: 15px;
+}
+.zomato p{
+    width: 580px;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.736);  
+    border-radius: 4px;
+    padding: 5px;
+}
+.box{
+    width: 580px;
+    height: 30px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+    padding: 5px;
+}
+.location{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.search{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.items{
+    width: 300px;
+    margin-left: 10px;
+    outline: none;
+    
+}
+
+/* LinkedIn */
+
+.linkedin{
+    width: 50%;
+    height: 60vh;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.3);
+}
+.linkedin:hover{
+    box-shadow: 2px 2px 20px rgb(2, 107, 20);
+}
+.bg{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.dp{
+    width: 180px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35%;
+    left: 38%;
+}
+.linkedin h1{
+    font-size: 36px;
+    margin-top: 100px;
+}
+.linkedin p{
+    font-size: 20px;
+    color: grey;
+}
